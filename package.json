@@ -5,7 +5,7 @@
   "homepage": "https://Bazaley.github.io/ReactPizza/",
   "dependencies": {
    
-    "@material-ui/core": "^4.12.4",
+
     "@mui/material": "^5.14.9",
     "@reduxjs/toolkit": "^1.9.1",
     "@testing-library/jest-dom": "^5.16.3",
