@@ -1,33 +1,12 @@
-import { MenuList, Item, Box, ListItemTextStyled } from './Filter.styled';
+import { MenuList, Item, Box } from './Filter.styled';
 import React from 'react';
-import { useState } from 'react';
+
 import { useSelector } from 'react-redux';
-import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
-import MenuItem from '@material-ui/core/MenuItem';
-import Menu from '@material-ui/core/Menu';
+
 import { selectCategory } from 'redux/selectors';
 
-const options = ['популярности', 'по цене', 'по алфавиту'];
-
 const Filter = ({ filter, setFilter }) => {
-  const [anchorEl, setAnchorEl] = React.useState(null);
-  const [selectedIndex, setSelectedIndex] = React.useState(0);
-
   const category = useSelector(selectCategory);
-
-  const handleClickListItem = event => {
-    setAnchorEl(event.currentTarget);
-  };
-
-  const handleMenuItemClick = (event, index) => {
-    setSelectedIndex(index);
-    setAnchorEl(null);
-  };
-
-  const handleClose = () => {
-    setAnchorEl(null);
-  };
 
   return (
     <Box>
@@ -42,7 +21,7 @@ const Filter = ({ filter, setFilter }) => {
           </Item>
         ))}
       </MenuList>
-
+      {/* 
       <div>
         <List component="nav" aria-label="Device settings">
           <ListItem
@@ -76,7 +55,7 @@ const Filter = ({ filter, setFilter }) => {
             </MenuItem>
           ))}
         </Menu>
-      </div>
+      </div> */}
     </Box>
   );
 };
