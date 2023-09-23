@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import ListItemText from '@material-ui/core/ListItemText';
+
 export const MenuList = styled.ul`
   display: flex;
 `;
@@ -31,21 +31,21 @@ export const Box = styled.div`
   margin-bottom: 35px;
 `;
 
-export const ListItemTextStyled = styled(ListItemText)`
-  font-family: 'Proxima-Nova', sans-serif;
-  display: flex;
-  margin-left: 10px;
-  color: #2c2c2c;
+// export const ListItemTextStyled = styled(ListItemText)`
+//   font-family: 'Proxima-Nova', sans-serif;
+//   display: flex;
+//   margin-left: 10px;
+//   color: #2c2c2c;
 
-  font-size: 14px;
+//   font-size: 14px;
 
-  font-weight: 700;
+//   font-weight: 700;
 
-  letter-spacing: 0.21px;
-  &.MuiTypography-colorTextSecondary {
-    color: red;
-  }
-`;
+//   letter-spacing: 0.21px;
+//   &.MuiTypography-colorTextSecondary {
+//     color: red;
+//   }
+// `;
 
 // [
 //   {
